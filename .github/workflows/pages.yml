@@ -39,6 +39,7 @@ jobs:
       - name: 🛠️ Run export
         run: |
           uv run marimo export html-wasm day1.py -o out --mode edit
+          cp inputs out/
 
       - name: 📄 List changed files
         continue-on-error: true
